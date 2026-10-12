@@ -1,0 +1,6 @@
+Metric,Mean (%),Std (%)
+Dice,79.22,0.00
+IoU,71.54,0.00
+Precision,85.63,0.00
+Recall,82.04,0.00
+Specificity,97.90,0.00

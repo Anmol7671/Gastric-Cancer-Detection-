@@ -1,0 +1,11 @@
+Task,Metric,Value (%),Mean±Std
+Segmentation,Dice,79.22,79.22% ± 0.00%
+Segmentation,IoU,71.54,71.54% ± 0.00%
+Segmentation,Precision,85.63,85.63% ± 0.00%
+Segmentation,Recall,82.04,82.04% ± 0.00%
+Segmentation,Specificity,97.90,97.90% ± 0.00%
+Detection,Accuracy,96.05,—
+Detection,Recall,96.05,—
+Detection,F1 Score,97.98,—
+Detection,Error Rate,3.95,—
+Detection,AP@0.5,96.07,—

@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────────────────────
+#  requirements.txt — PROPOSED pipeline (TransMobile-YOLO)
+#  (MobileNetV2 + SE-block U-Net segmentation + YOLOv8n detection,
+#   Unsharp+CLAHE preprocessing, multi-seed stability eval)
+#  Supported environment: 64-bit Python 3.10 or 3.11.
+#  Python 3.12+ is intentionally unsupported because this project's saved
+#  segmentation model was created with Keras/TensorFlow 2.15.
+#
+#  Windows note: TensorFlow 2.15 runs on CPU under native Windows. For a
+#  TensorFlow GPU, use WSL2. Ultralytics/PyTorch can still use an NVIDIA GPU.
+# ─────────────────────────────────────────────────────────────
+
+# --- Segmentation branch (TensorFlow / Keras) ---
+tensorflow==2.15.0
+# Keep TensorFlow/Keras 2.15: transmobile_seg_model.keras was saved by 2.15.
+
+# --- Detection branch ---
+ultralytics==8.2.58                  # YOLOv8n train/val/predict
+
+# --- Data tables / CSV output ---
+pandas==2.2.2                        # results CSV export (final_results.csv, stability CSV)
+
+# --- Data handling / image I/O ---
+numpy==1.26.4                        # pinned <2.0 — required for TF 2.15 compatibility
+opencv-python==4.10.0.84
+pillow==10.4.0
+
+# --- Plotting ---
+matplotlib==3.8.4
+# On Linux, install the OS tkinter package too for on-screen plot windows.
+
+# --- Standard library extras used in this file ---
+# glob, os — stdlib, no install needed

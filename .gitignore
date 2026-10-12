@@ -218,3 +218,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific
+.vscode/
+segmentation_dataset/
+yolo Dataset/
+npy_files/
+preprocessed/
+runs_yolo/
+*.docx
+*.xlsx
+~$*
+yolov8n.pt
+yolo26n.pt
